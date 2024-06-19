@@ -9,16 +9,20 @@ func HandleHeart(c *router.Context, second, third string) {
 		handleHeartIndex(c)
 		return
 	}
+	if second == "start" && third == "" && c.Method == "GET" {
+		handleHeartStart(c)
+		return
+	}
 	if second == "about-us" && third == "" && c.Method == "GET" {
-		handleSpaceAboutUs(c)
+		handleHeartAboutUs(c)
 		return
 	}
 	if second == "privacy" && third == "" && c.Method == "GET" {
-		handleSpacePrivacy(c)
+		handleHeartPrivacy(c)
 		return
 	}
 	if second == "terms" && third == "" && c.Method == "GET" {
-		handleSpaceTerms(c)
+		handleHeartTerms(c)
 		return
 	}
 	if second == "register" && third == "" && c.Method == "GET" {
@@ -62,15 +66,19 @@ func handleHeartLogin(c *router.Context) {
 func handleHeartRegisterPost(c *router.Context) {
 	c.SendContentAsJson("ok", 200)
 }
-func handleSpacePrivacy(c *router.Context) {
+func handleHeartPrivacy(c *router.Context) {
 	send := map[string]any{}
 	c.SendContentInLayout("privacy.html", send, 200)
 }
-func handleSpaceTerms(c *router.Context) {
+func handleHeartTerms(c *router.Context) {
 	send := map[string]any{}
 	c.SendContentInLayout("terms.html", send, 200)
 }
-func handleSpaceAboutUs(c *router.Context) {
+func handleHeartAboutUs(c *router.Context) {
 	send := map[string]any{}
 	c.SendContentInLayout("about_us.html", send, 200)
+}
+func handleHeartAboutUs(c *router.Context) {
+	send := map[string]any{}
+	c.SendContentInLayout("start.html", send, 200)
 }
