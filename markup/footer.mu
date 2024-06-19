@@ -3,7 +3,7 @@
     div
       Copyright &copy; 2024 - All right reserved by andrewarrow.dev
     div flex justify-center
-      div flex space-x-6
+      div flex space-x-6 whitespace-nowrap text-sm
         a href=/heart/about-us link link-hover
           About Us
         a href=/heart/terms link link-hover

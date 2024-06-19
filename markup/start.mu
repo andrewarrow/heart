@@ -9,7 +9,7 @@ div p-0
       div
         What's your first name?
       div
-        input type=text input input-primary autofocus=true
+        <input type="text" pattern=".*" class="w-full input input-primary" id="name" autofocus="true" autocomplete="off" inputmode="text" onkeydown2="if(event.key === 'Enter'){event.preventDefault(); this.blur();}" >
       div
         input type=submit val=ok hidden
     div cursor-pointer id=people hidden flex flex-wrap space-x-3 space-y-3
