@@ -4,8 +4,8 @@ div p-0
     div hero-content text-center
       div max-w-md
         h1 text-5xl font-bold
-          Land More $essions
+          A matter of Heart
         p py-6
-          Clients love our app. You'll love how easy it works.
+          A classic dating app.
         a href=/book/register btn btn-primary
           Get Started
