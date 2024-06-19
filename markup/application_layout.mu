@@ -26,9 +26,8 @@ html data-theme=garden
       {{ index . "content" }}
     div 
       div pb-32 footer items-center p-10 bg-base-200 text-base-content rounded
-        div items-center grid-flow-col
-          Copyright &copy; 2024 - All right reserved by andrewarrow.dev
-        div grid-flow-col gap-4 md:place-self-center md:justify-self-end
+        Copyright &copy; 2024 - All right reserved by andrewarrow.dev
+        div grid-flow-col gap-4 place-self-center md:justify-self-end
           a href=/heart/about-us link link-hover
             About Us
           a href=/heart/terms link link-hover
