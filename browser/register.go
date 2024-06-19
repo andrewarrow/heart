@@ -17,5 +17,6 @@ func RegisterEvents() {
 
 func start1(id int64) {
 	d := Document.Id("start")
-	d.Set("innerHTML", "hi")
+	d.Set("innerHTML", "Hi! Pick your avatar photo or no photo at all:")
+	Document.Id("people").Show()
 }

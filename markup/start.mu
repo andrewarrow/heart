@@ -12,7 +12,7 @@ div p-0
         input type=text input input-primary autofocus=true
       div
         input type=submit val=ok hidden
-    div flex flex-wrap space-x-3 space-y-3
+    div id=people hidden flex flex-wrap space-x-3 space-y-3
       div ml-3 mt-3
         img w-32 w-32 rounded-lg src=https://i.imgur.com/JKuLPSe.png
       div
