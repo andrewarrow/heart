@@ -9,7 +9,7 @@ div p-0
       div
         What's your first name?
       div
-        <input type="text" pattern=".*" class="w-full input input-primary" id="name" autofocus="true" autocomplete="off" inputmode="text" onkeydown2="if(event.key === 'Enter'){event.preventDefault(); this.blur();}" >
+        <input type="text" pattern=".*" class="w-full input input-primary" id="name" autofocus="true" autocomplete="off" inputmode="text" >
       div
         input type=submit val=ok hidden
     div cursor-pointer id=people hidden flex flex-wrap space-x-3 space-y-3
@@ -49,3 +49,4 @@ div p-0
         img w-32 w-32 rounded-lg src=https://i.imgur.com/MtmCaPy.png
       div 
         img w-32 w-32 rounded-lg src=https://i.imgur.com/63Ii55q.png
+  {{ template "toolbar" . }}

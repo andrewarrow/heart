@@ -32,6 +32,7 @@ func pickPerson() {
 	people := Document.Id("people")
 	people.Hide()
 	top()
+	Document.Id("toolbar").Show()
 }
 
 func top() {
