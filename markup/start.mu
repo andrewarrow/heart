@@ -49,8 +49,6 @@ div p-0
         img w-32 w-32 rounded-lg src=https://i.imgur.com/MtmCaPy.png
       div 
         img w-32 w-32 rounded-lg src=https://i.imgur.com/63Ii55q.png
-      div 
-        img src=https://i.imgur.com/Fpp1T8c.png w-32 w-32 rounded-lg
   div fixed bottom-0 left-0 w-full bg-gray-800 text-white p-9
     div flex justify-center
       div flex space-x-9
