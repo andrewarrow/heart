@@ -19,4 +19,12 @@ func start1(id int64) {
 	d := Document.Id("start")
 	d.Set("innerHTML", "Hi! Pick your avatar photo or no photo at all:")
 	Document.Id("people").Show()
+	top()
+}
+
+func top() {
+	// window.scrollTo({ top: 0, behavior: 'smooth' // This makes the scrolling smooth });
+	w := Global.Global.Get("window")
+	opts := Global.Global.Get("JSON").Call("parse", `{"top": 0, "behavior": "smooth"}`)
+	w.Call("scrollTo", opts)
 }
