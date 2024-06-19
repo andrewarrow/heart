@@ -78,7 +78,7 @@ func handleHeartAboutUs(c *router.Context) {
 	send := map[string]any{}
 	c.SendContentInLayout("about_us.html", send, 200)
 }
-func handleHeartAboutUs(c *router.Context) {
+func handleHeartStart(c *router.Context) {
 	send := map[string]any{}
 	c.SendContentInLayout("start.html", send, 200)
 }
