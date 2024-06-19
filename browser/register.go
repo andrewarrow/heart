@@ -12,14 +12,7 @@ func RegisterEvents() {
 	if Global.Start == "welcome.html" {
 		LoginEvents()
 	} else if Global.Start == "login.html" {
-		Global.AutoForm("login", "/book")
-	} else if Global.Start == "business.html" {
-		DatePicker()
-		div := Document.Id("services")
-		for _, a := range div.SelectAllByClass("service") {
-			service := Service{a.Id}
-			a.EventWithId(service.Click)
-		}
+		Global.AutoForm("login", "/book", nil, nil)
 	} else if Global.Start == "register.html" {
 		NewUserEvents()
 		LoginEvents()
@@ -34,7 +27,7 @@ func LoginEvents() {
 }
 
 func NewUserEvents() {
-	Global.AutoForm("register", "/book")
+	Global.AutoForm("register", "/book", nil, nil)
 }
 
 func LogoutEvents() {
