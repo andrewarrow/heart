@@ -1,13 +1,13 @@
 {{ define "navbar" }}
   div navbar 
     div navbar-start 
-      div btn btn-ghost w-32 h-32
+      div btn btn-ghost w-20 h-20 -ml-6
         a href=/
           img rounded-md src=https://i.imgur.com/ncNzv2g.png
     div navbar-center flex hidden md:block
       ul menu menu-horizontal
     div navbar-end
-      div mr-9
+      div mr-0
         {{ $user := index . "user" }}
         {{ if $user }}
           a href=/profile
