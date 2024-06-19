@@ -13,6 +13,10 @@ func HandleHeart(c *router.Context, second, third string) {
 		handleHeartStart(c)
 		return
 	}
+	if second == "start" && third == "" && c.Method == "POST" {
+		handleHeartStart(c)
+		return
+	}
 	if second == "about-us" && third == "" && c.Method == "GET" {
 		handleHeartAboutUs(c)
 		return
