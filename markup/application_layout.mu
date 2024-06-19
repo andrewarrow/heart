@@ -1,4 +1,4 @@
-html data-theme=corporate
+html data-theme=garden
   head
     {{ $build := index . "build" }}
     {{ $og := index . "og" }}
@@ -22,7 +22,7 @@ html data-theme=corporate
   body
     div id=flash bg-red-600 text-white text-center fixed top-0 left-0 w-full
       {{ index . "flash" }}
-    div overflow-x-auto pl-3 pr-3 min-h-screen font-familjen text-base
+    div overflow-x-auto pl-3 pr-3 min-h-screen font-poppins text-base
       {{ index . "content" }}
     div 
       div pb-32 footer items-center p-10 bg-base-200 text-base-content rounded
