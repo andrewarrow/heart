@@ -15,7 +15,7 @@
           a href=# id=logout
             Logout
         {{ else }}
-          a href=# id=sign-in whitespace-nowrap
-            Sign in
+          a href=/ id=sign-in whitespace-nowrap
+            Guest
         {{ end }}
   {{ end }}

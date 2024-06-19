@@ -10,7 +10,7 @@ var Document *wasm.Document
 func RegisterEvents() {
 	LogoutEvents()
 	if Global.Start == "welcome.html" {
-		LoginEvents()
+		//LoginEvents()
 	} else if Global.Start == "login.html" {
 		Global.AutoForm("login", "/book", nil, nil)
 	} else if Global.Start == "register.html" {

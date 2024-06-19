@@ -7,5 +7,5 @@ div p-0
           A matter of Heart
         p py-6
           A classic dating app.
-        a href=/book/register btn btn-primary
+        a href=/heart/about-us btn btn-primary
           Get Started
