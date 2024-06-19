@@ -31,7 +31,7 @@ html data-theme=garden
           a href=/heart/about-us link link-hover
             About Us
           a href=/heart/terms link link-hover
-            Terms & Conditions
+            Terms of Service 
           a href=/heart/privacy link link-hover
             Privacy Policy
     {{ index . "wasm" }}
