@@ -1,6 +1,6 @@
 {
   "footer": "github.com/andrewarrow/feedback",
-  "title": "book",
+  "title": "heart",
   "routes": [{"root": "sessions", "paths": [
                      {"verb": "GET", "second": "", "third": ""},
                      {"verb": "GET", "second": "*", "third": ""},
