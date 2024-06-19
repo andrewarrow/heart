@@ -15,9 +15,6 @@ func HandleWelcome(c *router.Context, second, third string) {
 func handleWelcomeIndex(c *router.Context) {
 
 	send := map[string]any{}
-	if len(c.User) == 0 {
-		c.SendContentInLayout("welcome.html", send, 200)
-		return
-	}
-	handleBookIndex(c)
+	c.SendContentInLayout("welcome.html", send, 200)
+	return
 }

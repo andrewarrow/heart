@@ -39,7 +39,7 @@ func main() {
 		router.EmbeddedAssets = embeddedAssets
 		r := router.NewRouter("DATABASE_URL", embeddedFile)
 		r.Paths["/"] = app.HandleWelcome
-		r.Paths["book"] = app.HandleBook
+		r.Paths["heart"] = app.HandleHeart
 		r.Paths["api"] = app.HandleApi
 		//r.Paths["login"] = app.Login
 		//r.Paths["register"] = app.Register
