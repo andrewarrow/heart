@@ -22,16 +22,6 @@ html data-theme=garden
   body
     div id=flash bg-red-600 text-white text-center fixed top-0 left-0 w-full
       {{ index . "flash" }}
-    div overflow-x-auto pl-3 pr-3 min-h-screen font-poppins text-base
+    div overflow-x-auto min-h-screen font-poppins text-base
       {{ index . "content" }}
-    div pt-16
-      div pb-32 footer items-center p-10 bg-base-200 text-base-content rounded
-        Copyright &copy; 2024 - All right reserved by andrewarrow.dev
-        div grid-flow-col gap-4 place-self-center md:justify-self-end
-          a href=/heart/about-us link link-hover
-            About Us
-          a href=/heart/terms link link-hover
-            Terms of Service 
-          a href=/heart/privacy link link-hover
-            Privacy Policy
     {{ index . "wasm" }}

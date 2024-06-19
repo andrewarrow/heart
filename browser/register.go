@@ -18,7 +18,19 @@ func RegisterEvents() {
 func start1(id int64) {
 	d := Document.Id("start")
 	d.Set("innerHTML", "Hi! Pick your avatar photo or no photo at all:")
-	Document.Id("people").Show()
+	people := Document.Id("people")
+	people.Show()
+	for _, img := range people.SelectAll("img") {
+		img.EventWithId(pickPerson)
+	}
+	top()
+}
+
+func pickPerson() {
+	d := Document.Id("start")
+	d.Set("innerHTML", "Thanks!")
+	people := Document.Id("people")
+	people.Hide()
 	top()
 }
 

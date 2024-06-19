@@ -1,5 +1,5 @@
 {{ define "navbar" }}
-  div navbar 
+  div navbar pl-6 pr-6
     div navbar-start 
       div btn btn-ghost w-20 h-20 -ml-6
         a href=/

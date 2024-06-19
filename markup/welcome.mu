@@ -9,3 +9,4 @@ div p-0
           A classic dating app.
         a href=/heart/start btn btn-primary
           Get Started
+  {{ template "footer" . }}
