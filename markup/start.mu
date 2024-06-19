@@ -12,3 +12,16 @@ div p-0
         input type=text input input-primary autofocus=true
       div
         input type=submit val=ok hidden
+    div flex flex-grow space-x-3
+      div
+        img src=https://i.imgur.com/Fpp1T8c.png w-32 w-32 rounded-lg
+      div
+        img src=https://i.imgur.com/4tnmnkD.png w-32 w-32 rounded-lg
+      div
+        img w-32 w-32 rounded-lg src=https://i.imgur.com/3QOb76A.png
+      div
+        img w-32 w-32 rounded-lg src=https://i.imgur.com/LPUttvH.png
+      div
+        img w-32 w-32 rounded-lg src=https://i.imgur.com/Ub34uhP.png
+      div
+        img w-32 w-32 rounded-lg src=https://i.imgur.com/v5bunRG.png
