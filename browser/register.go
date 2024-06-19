@@ -24,7 +24,8 @@ func start1(id int64) {
 
 func top() {
 	// window.scrollTo({ top: 0, behavior: 'smooth' // This makes the scrolling smooth });
+	//behavior auto
 	w := Global.Global.Get("window")
-	opts := Global.Global.Get("JSON").Call("parse", `{"top": 0, "behavior": "smooth"}`)
-	w.Call("scrollTo", opts)
+	//opts := Global.Global.Get("JSON").Call("parse", `{"top": 0, "behavior": "smooth"}`)
+	w.Call("scrollTo", 0, 0)
 }
