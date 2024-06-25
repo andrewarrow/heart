@@ -12,18 +12,18 @@ div p-0
           div
             1st person:
           div
-            input id=p1 type=text pattern=.* w-full input input-primary id=name autofocus=true autocomplete=off inputmode=text
+            input id=first type=text pattern=.* w-full input input-primary autofocus=true autocomplete=off inputmode=text
       div flex space-x-6
         div
           div
             2nd person:
           div
-            input id=p2 type=text pattern=.* w-full input input-primary id=name autofocus=true autocomplete=off inputmode=text
+            input id=second type=text pattern=.* w-full input input-primary autofocus=true autocomplete=off inputmode=text
       div flex space-x-6
         div
           div
             3rd person:
           div
-            input id=p3 type=text pattern=.* w-full input input-primary id=name autofocus=true autocomplete=off inputmode=text
+            input id=third type=text pattern=.* w-full input input-primary autofocus=true autocomplete=off inputmode=text
       div
         input type=submit val=ok hidden

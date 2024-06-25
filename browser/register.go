@@ -31,7 +31,7 @@ func start() {
 	fn := func() {
 		fmt.Println("wfwef")
 	}
-	Document.Id("p1").JValue.Set("onblur", wasm.SimpleFuncOf(fn))
+	Document.Id("first").JValue.Set("onblur", wasm.SimpleFuncOf(fn))
 
 }
 
