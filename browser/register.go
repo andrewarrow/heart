@@ -1,6 +1,8 @@
 package browser
 
 import (
+	"fmt"
+
 	"github.com/andrewarrow/feedback/wasm"
 )
 
@@ -16,7 +18,8 @@ func RegisterEvents() {
 		Global.Location.Set("href", "/heart/start")
 	}
 	if Global.Start == "start.html" {
-		Global.AutoForm("start", "heart", nil, start1)
+		//Global.AutoForm("start", "heart", nil, start1)
+		start()
 	} else if Global.Start == "login.html" {
 		Global.AutoForm("login", "heart", nil, afterLogin)
 	} else if Global.Start == "register.html" {
@@ -24,33 +27,16 @@ func RegisterEvents() {
 	}
 }
 
-func start1(id int64) {
-	d := Document.Id("start")
-	d.Set("innerHTML", "Hi! Pick your avatar photo or no photo at all:")
-	people := Document.Id("people")
-	people.Show()
-	for _, img := range people.SelectAll("img") {
-		img.EventWithId(pickPerson)
-	}
-	top()
+func start() {
+	p1 := Document.Id("p1")
+	fmt.Println(p1)
 }
 
-func pickPerson() {
-	d := Document.Id("start")
-	d.Set("innerHTML", "Thanks!")
-	people := Document.Id("people")
-	people.Hide()
-	top()
-	Document.Id("toolbar").Show()
-}
-
-func top() {
-	// window.scrollTo({ top: 0, behavior: 'smooth' // This makes the scrolling smooth });
-	//behavior auto
+func scrollToTop() {
 	w := Global.Global.Get("window")
-	//opts := Global.Global.Get("JSON").Call("parse", `{"top": 0, "behavior": "smooth"}`)
 	w.Call("scrollTo", 0, 0)
 }
+
 func LogoutEvents() {
 	if Document.Id("logout") == nil {
 		return
