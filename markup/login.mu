@@ -7,9 +7,9 @@ div p-0
           Login
       form mt-6 space-y-3 id=login
         div
-          input input input-primary id=email placeholder=email autofocus=true
+          input value=oneone+jun10@gmail.com input input-primary id=email placeholder=email autofocus=true
         div
-          input input input-primary id=password placeholder=password
+          input value=testing123 input input-primary id=password placeholder=password
         div flex space-x-6 justify-between
           div
             input type=submit btn btn-primary value=Go

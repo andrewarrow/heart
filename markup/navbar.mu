@@ -13,7 +13,7 @@
             a href=# id=logout
               Logout
           {{ else }}
-            a href=/heart/register btn btn-ghost
+            a href=/heart/login btn btn-ghost
               Login / Sign Up
           {{ end }}
     {{ end }}

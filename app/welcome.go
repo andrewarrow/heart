@@ -14,6 +14,11 @@ func HandleWelcome(c *router.Context, second, third string) {
 
 func handleWelcomeIndex(c *router.Context) {
 
+	if len(c.User) > 0 {
+		handleHeartStart(c)
+		return
+	}
+
 	send := map[string]any{}
 	c.SendContentInLayout("welcome.html", send, 200)
 	return
