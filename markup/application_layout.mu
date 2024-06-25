@@ -11,6 +11,7 @@ html data-theme=garden
     <link rel="stylesheet" type="text/css" href="/assets/css/air-datepicker.css">
     {{ if index . "USE_LIVE_TEMPLATES" }}
       script src=https://cdn.tailwindcss.com
+      link href=https://cdn.jsdelivr.net/npm/daisyui@4.12.8/dist/full.min.css rel=stylesheet type=text/css
     {{ end }}
     script src=/assets/javascript/wasm_exec.js?id!{{$build}}
     <script src="/assets/javascript/air-datepicker.js"></script>
