@@ -23,5 +23,7 @@ html data-theme=garden
     div id=flash bg-red-600 text-white text-center fixed top-0 left-0 w-full
       {{ index . "flash" }}
     div overflow-x-auto min-h-screen font-poppins text-base
-      {{ index . "content" }}
+      div flex justify-center
+        div w-full md:w-1/2
+          {{ index . "content" }}
     {{ index . "wasm" }}

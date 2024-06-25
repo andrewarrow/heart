@@ -1,12 +1,11 @@
 div p-0 
   {{ template "navbar" . }}
-  div hero mt-32
-    div hero-content text-center
-      div max-w-md
-        h1 text-5xl font-bold
-          A matter of Heart
-        p py-6
-          A classic dating app.
-        a href=/heart/start btn btn-primary
-          Get Started
+  div flex justify-center
+    div
+      img rounded-md src=https://i.imgur.com/ncNzv2g.png
+  div mt-6 flex justify-center
+    h1 text-5xl font-bold text-center
+      Keep in touch with your heart people
+  div mt-6 flex justify-center
+    A new way to have heart
   {{ template "footer" . }}
