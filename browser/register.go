@@ -8,6 +8,7 @@ var Global *wasm.Global
 var Document *wasm.Document
 
 func RegisterEvents() {
+	LogoutEvents()
 	afterRegister := func(id int64) {
 		Global.Location.Set("href", "/heart/start")
 	}
@@ -49,4 +50,10 @@ func top() {
 	w := Global.Global.Get("window")
 	//opts := Global.Global.Get("JSON").Call("parse", `{"top": 0, "behavior": "smooth"}`)
 	w.Call("scrollTo", 0, 0)
+}
+func LogoutEvents() {
+	if Document.Id("logout") == nil {
+		return
+	}
+	Global.Event("logout", Global.Logout("/heart"))
 }
