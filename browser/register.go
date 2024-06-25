@@ -8,10 +8,18 @@ var Global *wasm.Global
 var Document *wasm.Document
 
 func RegisterEvents() {
+	afterRegister := func(id int64) {
+		Global.Location.Set("href", "/heart/start")
+	}
+	afterLogin := func(id int64) {
+		Global.Location.Set("href", "/heart/start")
+	}
 	if Global.Start == "start.html" {
 		Global.AutoForm("start", "heart", nil, start1)
 	} else if Global.Start == "login.html" {
+		Global.AutoForm("login", "heart", nil, afterLogin)
 	} else if Global.Start == "register.html" {
+		Global.AutoForm("register", "heart", nil, afterRegister)
 	}
 }
 
