@@ -15,4 +15,6 @@ if [ $? -eq 0 ]; then
   uuid=$(uuidgen); go build -ldflags="-X main.buildTag=$uuid" -o heart
   echo 3
   ./heart run 3000
+else
+  mv save_main main.go
 fi

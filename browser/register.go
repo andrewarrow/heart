@@ -28,8 +28,11 @@ func RegisterEvents() {
 }
 
 func start() {
-	p1 := Document.Id("p1")
-	fmt.Println(p1)
+	fn := func() {
+		fmt.Println("wfwef")
+	}
+	Document.Id("p1").JValue.Set("onblur", wasm.SimpleFuncOf(fn))
+
 }
 
 func scrollToTop() {
