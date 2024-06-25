@@ -13,5 +13,8 @@ div p-0
         div flex space-x-6 justify-between
           div
             input type=submit btn btn-primary value=Go
-          div
-            input type=submit btn btn-secondary value=Forgot
+      div mt-3
+        span
+          Need an account?
+        a href=/heart/register underline
+          Register

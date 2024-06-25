@@ -12,3 +12,8 @@ div p-0
           input input input-primary id=password placeholder=password
         div
           input type=submit btn btn-primary value=Go
+      div mt-3
+        span
+          Already have account?
+        a href=/heart/login underline
+          Login
